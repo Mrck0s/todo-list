@@ -5,17 +5,17 @@
 }
 .app-container{
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
 }
 .list-container{
   background-color: #ddd;
   width: 50%;
-  height: 90%;
-  margin: 5% auto;
+  height: 100%;
+  margin: 2% auto;
 }
 .titulo-container{
   width: 100%;
-  padding: 5%;
+  padding-top: 5%;
   text-align: center;
 }
 .titulo{
@@ -27,7 +27,7 @@
 }
 .inputs-container{
   width: 70%;
-  padding: 2%;
+  padding-top: 3%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -42,8 +42,24 @@
   font-size: 12px;
   cursor: pointer;
 }
+.footer{
+  width: 100vw;
+  height: 20vh;
+  margin-top: 3%;
+  text-align: center;
+}
+.logo-container{
+  width: 100%;
+  height: 50%;
+}
 .logo{
-  display: none;
+  height: 100%;
+}
+.footer-text-container{
+  padding-top: 2%;
+}
+.footer-text{
+  color: #ddd;
 }
 /* Clases genéricas */
 .border-radius{
