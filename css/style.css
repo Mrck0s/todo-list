@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.body{
+  background-color: #333;
+}
+.app-container{
+  background-color: #ddd;
+  width: 50vw;
+  height: 80vh;
+  margin: 5% auto;
+  border-radius: 2em;
+}
+.titulo-container{
+  width: 80%;
+  padding: 5%;
+  margin: auto;
+  text-align: center;
+}
+.titulo{
+  display: inline-block;
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  padding-bottom: 5px;
+  border-bottom: 2px dotted #333;
+}
+.logo{
+  display: none;
+}
