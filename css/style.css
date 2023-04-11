@@ -1,28 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 .body{
   background-color: #333;
+  font-family: 'Playfair Display', serif;
 }
 .app-container{
-  background-color: #ddd;
-  width: 50vw;
+  width: 100vw;
   height: 80vh;
+}
+.list-container{
+  background-color: #ddd;
+  width: 50%;
+  height: 90%;
   margin: 5% auto;
-  border-radius: 2em;
 }
 .titulo-container{
-  width: 80%;
+  width: 100%;
   padding: 5%;
-  margin: auto;
   text-align: center;
 }
 .titulo{
   display: inline-block;
   font-size: 2em;
-  font-family: 'Playfair Display', serif;
   font-style: italic;
   padding-bottom: 5px;
   border-bottom: 2px dotted #333;
 }
+.inputs-container{
+  width: 70%;
+  padding: 2%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.insert-tasks{
+  padding: 2%;
+  padding-right: 40%;
+  font-size: 12px;
+}
+.add-btn{
+  padding: 2%;
+  font-size: 12px;
+  cursor: pointer;
+}
 .logo{
   display: none;
+}
+/* Clases genéricas */
+.border-radius{
+  border-radius: 2em;
+  border: none;
 }
