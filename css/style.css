@@ -38,35 +38,77 @@
   padding-right: 40%;
   font-size: 12px;
 }
+.insert-tasks:focus{
+  outline: none;
+}
 .add-btn{
   padding: 2%;
   font-size: 12px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.add-btn:hover{
+  transform: scale(1.2);
+  background-color: lightgreen;
+  color: white;
 }
 .tasks-container{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
   height: 60%;
   margin-top: 3%;
-  background-color: red;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.tasks-container::-webkit-scrollbar{
+  width: 10px;
+  background-color: #aaa;
+  border-radius: 2em;
+}
+.tasks-container::-webkit-scrollbar-thumb{
+  background-color: #222;
+  border-radius: 2em;
 }
 .task{
   display: flex;
   width: 70%;
-  margin: 0 auto;
-  background-color: blue;
-  padding: 3%;
+  margin: 1% auto;
+  background-color: #f1f1f1;
+  padding: 2%;
   justify-content: space-around;
 }
 .task-text{
   width: 80%;
   color: #333;
+  font-size: 18px;
+  font-style: italic;
+}
+.task-btn{
+  background-color: #f1f1f1;
+  color: #333;
+  transition: all 0.3s;
+}
+.task-btn:hover{
+  transform: scale(1.4);
+}
+.check-btn:hover{
+  color: lightgreen;
+}
+.del-btn:hover{
+  color: red;
 }
 .order-btn{
   display: inline;
   padding: 2% 5%;
-  margin-top: 4%;
+  margin: 2% auto;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.order-btn:hover{
+  transform: scale(1.1);
+  background-color: rgb(124, 255, 255);
+  color: white;
 }
 .footer{
   width: 100vw;
@@ -91,4 +133,7 @@
 .border{
   border-radius: 2em;
   border: none;
+}
+.input-btn-background{
+  background-color: #f1f1f1;
 }
