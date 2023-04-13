@@ -13,10 +13,11 @@
   height: 100%;
   margin: 2% auto;
   text-align: center;
+  box-shadow: 0 0 10px 15px #222;
 }
 .titulo-container{
   width: 100%;
-  padding-top: 5%;
+  padding-top: 3%;
   text-align: center;
 }
 .titulo{
@@ -54,12 +55,14 @@
 }
 .tasks-container{
   display: flex;
+  background-color: #222;
   flex-direction: column;
-  width: 95%;
+  width: 90%;
   height: 60%;
-  margin-top: 3%;
+  margin: 3% auto;
   overflow: auto;
   scroll-behavior: smooth;
+  box-shadow: 0px 0px 5px 5px #777;
 }
 .tasks-container::-webkit-scrollbar{
   width: 10px;
@@ -73,10 +76,10 @@
 .task{
   display: flex;
   width: 70%;
-  margin: 1% auto;
-  background-color: #f1f1f1;
+  margin: 3% auto;
   padding: 2%;
   justify-content: space-around;
+  box-shadow: 0 0 5px 3px #222;
 }
 .task-text{
   width: 80%;
@@ -87,6 +90,7 @@
 .task-btn{
   background-color: #f1f1f1;
   color: #333;
+  cursor: pointer;
   transition: all 0.3s;
 }
 .task-btn:hover{
@@ -136,4 +140,7 @@
 }
 .input-btn-background{
   background-color: #f1f1f1;
+}
+.list-element-shadow{
+  box-shadow: 0 0 3px 2px #999;
 }
