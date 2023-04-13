@@ -7,7 +7,8 @@
   <title>To-Do List</title>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/script.js" defer></script>
+  <script src="/js/localStorage.js" defer></script>
+  <script src="/js/list.js" defer></script>
 </head>
 <body class="body">
   <div class="app-container">
@@ -19,7 +20,7 @@
         <input type="text" class="task-entry border list-element-shadow input-btn-background" placeholder="Escribe una tarea...">
         <input type="button" class="add-btn border list-element-shadow input-btn-background" value="Añadir">
       </div>
-      <ul class="tasks-container border">
+      <ul class="tasks-container">
         <span class="empty">Es necesario agregar una tarea</span>
       </ul>
       <button class="order-btn border list-element-shadow">Ordenar</button>
