@@ -2,9 +2,6 @@
 const taskEntry = document.querySelector('.task-entry');
 const addBtn = document.querySelector('.add-btn');
 const list = document.querySelector('.tasks-container');
-const check1task = document.querySelector('.check.btn');
-const del1task = document.querySelector('.del-btn');
-const exampleTask = document.querySelector('#example');
 const empty = document.querySelector('.empty');
 
 //funcion para agregar la tarea a la lista
@@ -17,7 +14,7 @@ addBtn.addEventListener('click', (e) => {
     li.classList.add('task', 'border', 'input-btn-background');
     p.classList.add('task-text');
     p.textContent = taskContent;
-    // li.appendChild(addBtnCheck());
+    li.appendChild(addBtnCheck());
     li.appendChild(p);
     li.appendChild(addBtnDel());
     list.appendChild(li);
@@ -26,6 +23,7 @@ addBtn.addEventListener('click', (e) => {
       alert("Primero debe escribir una tarea para agregar");
   }
   taskEntry.value = "";
+  taskEntry.focus();
 });
 
 //funcion que agrega el boton de borrado a la tarea
@@ -48,3 +46,17 @@ function addBtnDel () {
 }
 
 //funcion que agrega el boton de check a la tarea
+function addBtnCheck () {
+  const btnCheck = document.createElement("button");
+  btnCheck.classList.add("check-btn", "border", "task-btn", "input-btn-background");
+  btnCheck.innerText = "✓";
+
+  btnCheck.addEventListener("click", (e) => {
+      e.preventDefault();
+      const taskItem = e.target.closest(".task");
+      const taskText = taskItem.querySelector(".task-text");
+      taskText.classList.add("task-completed");
+  });
+  
+  return btnCheck;
+}
