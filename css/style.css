@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
 }
-.insert-tasks{
+.task-entry{
   padding: 2%;
   padding-right: 40%;
   font-size: 12px;
@@ -73,19 +73,32 @@
   background-color: #222;
   border-radius: 2em;
 }
+.empty{
+  display: none;
+  color: #ddd;
+  font-size: 25px;
+  font-style: italic;
+  margin: auto;
+  padding-bottom: 5px;
+  border-bottom: 2px dotted ;
+}
 .task{
   display: flex;
   width: 70%;
   margin: 3% auto;
   padding: 2%;
   justify-content: space-around;
-  box-shadow: 0 0 5px 3px #222;
+  box-shadow: 0 0 5px 3px #111;
 }
 .task-text{
   width: 80%;
   color: #333;
   font-size: 18px;
+}
+.task-done{
+  color: #777;
   font-style: italic;
+  text-decoration: line-through;
 }
 .task-btn{
   background-color: #f1f1f1;

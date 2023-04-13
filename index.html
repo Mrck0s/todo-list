@@ -16,11 +16,12 @@
         <h2 class="titulo">Lista de Tareas</h2>
       </div>
       <div class="inputs-container">
-        <input type="text" class="insert-tasks border list-element-shadow input-btn-background" placeholder="Escribe una tarea...">
+        <input type="text" class="task-entry border list-element-shadow input-btn-background" placeholder="Escribe una tarea...">
         <input type="button" class="add-btn border list-element-shadow input-btn-background" value="Añadir">
       </div>
       <ul class="tasks-container border">
-        <li class="task border input-btn-background">
+        <span class="empty">Es necesario agregar una tarea</span>
+        <li class="task border input-btn-background" id="#example">
           <button class="check-btn border task-btn input-btn-background">✓</button>
           <p class="task-text">Añadir una tarea</p>
           <button class="del-btn border task-btn input-btn-background">🗑</button>
