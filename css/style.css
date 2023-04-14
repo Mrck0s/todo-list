@@ -72,7 +72,7 @@
   border-radius: 2em;
 }
 .empty{
-  color: #ddd;
+  color: #333;
   font-size: 25px;
   font-style: italic;
   margin: auto;
@@ -120,7 +120,7 @@
 }
 .order-btn:hover{
   transform: scale(1.1);
-  background-color: rgb(124, 255, 255);
+  background-color: rgb(144, 255, 255);
   color: white;
 }
 .footer{
